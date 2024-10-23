@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 export default function JuegosInteractivos() {
     // Estado para almacenar la URL del juego cargado
