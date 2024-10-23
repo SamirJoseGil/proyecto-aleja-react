@@ -6,8 +6,6 @@ function Bienvenida() {
         <div className='custom-body'>
             <div className="welcome-container">
                 <h1 className="custom-title-welcome">TechEduca</h1>
-                <p>Hecho por Maryoni Garcia Vargas y Salome Serna Sepulveda</p>
-                <p>Hecho con HTML, CSS y JavaScript</p>
                 <button className="btn-primary"><a href="/Manual">Comenzar</a></button>
             </div>
             <div className="animation-container">
