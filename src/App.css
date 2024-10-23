@@ -1,9 +1,10 @@
+/* --- Root Element --- */
 #root {
   min-width: 100%;
   min-height: 100vh;
 }
 
-/* Estilos generales */
+/* --- Estilos generales del body --- */
 .custom-body {
   background-color: #012;
   color: white;
@@ -20,6 +21,7 @@
   margin-bottom: 20px;
 }
 
+/* --- Main y Footer --- */
 main {
   min-height: calc(100vh - 320px);
   padding: 20px;
@@ -33,7 +35,7 @@ footer {
   height: 70px;
 }
 
-/* Welcome Component */
+/* --- Welcome Component --- */
 .welcome-container {
   text-align: center;
   z-index: 10;
@@ -45,14 +47,14 @@ footer {
 }
 
 .welcome-container h1,
-.welcome-container p
-{
+.welcome-container p {
   background: linear-gradient(to right, #f1feff, #c7fdff);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+/* --- Animación en el fondo --- */
 .animation-container {
   position: absolute;
   top: -30%;
@@ -71,6 +73,7 @@ footer {
   border: none;
 }
 
+/* --- Botones primarios --- */
 .btn-primary {
   background: linear-gradient(to left, #f1feff, #c7fdff);
   border: px solid;
@@ -86,49 +89,33 @@ footer {
   color: rgb(0, 0, 0);
 }
 
-/* Estilos adicionales para los títulos */
-a {
-  text-decoration: none;
-  color: #000000;
-}
-
+/* --- Estilos para los títulos --- */
 .custom-title-welcome {
   font-weight: bold;
   font-size: 4rem;
   margin-bottom: 2rem;
 }
 
-.custom-title {
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.custom-title, .custom-title-small {
   font-weight: bold;
   background: linear-gradient(to right, #006384, #c7fdff);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.custom-title-small {
-  font-weight: bold;
-  background: linear-gradient(to right, #006384, #c7fdff);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-} 
-
-/* Estilos para el main contenedor */
+/* --- Contenedores principales --- */
 .custom-main-container {
   margin: 0;
   padding: 0;
-}
-
-.custom-main-container {
   min-height: 66vh;
 }
 
-.custom-container {
-  margin-top: 2%;
-  margin-bottom: 2%;
-  margin-left: 8%;
-  margin-right: 8%;
-}
-
+/* --- Juego (Game container) --- */
 .game-container {
   width: 100%;
   height: 100vh;
@@ -145,6 +132,7 @@ a {
   border: none;
 }
 
+/* --- Estilos para tarjetas de imágenes --- */
 .custom-img-card {
   width: 80%;
   height: 60%;
@@ -152,8 +140,7 @@ a {
   margin-top: 1rem;
 }
 
-
-/* Estilos para las listas */
+/* --- Listas y párrafos --- */
 .custom-list-item {
   margin-bottom: 10px;
 }
@@ -162,26 +149,28 @@ a {
   margin-bottom: 20px;
 }
 
-/* Estilos para las imagenes */
+/* --- Estilos para imágenes --- */
 .custom-img {
   min-width: 30%;
   max-width: 40%;
   margin: 2rem;
 }
 
-/* Numero de pagina */
+/* --- Número de página --- */
 .custom-number {
-  font-size: 5%;
+  font-size: 1rem;
   font-weight: bold;
   color: black;
 }
 
+/* --- Botones de navegación --- */
 .custom-buttom-container {
-  width: 4%;
-  height: 3%;
+  width: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Estilos para los botones de navegación */
 .custom-buttons .row {
   justify-content: center;
 }
@@ -192,21 +181,7 @@ a {
   font-weight: bold;
 }
 
-.custom-buttom-container {
-  width: 6%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.custom-number {
-  font-size: 1rem;
-  font-weight: bold;
-  color: black;
-}
-
-
-/* Media queries para hacer la página responsive */
+/* --- Media queries para diseño responsivo --- */
 @media (max-width: 768px) {
   .custom-navbar {
     flex-direction: column;
@@ -245,6 +220,11 @@ a {
   .custom-buttom-container {
     width: 10%;
   }
+
+  iframe {
+    width: 100%;
+    height: 100%; 
+  }
 }
 
 @media (max-width: 480px) {
@@ -272,10 +252,7 @@ a {
   }
 }
 
-
-
-/* Utils */
-
+/* --- Utils (utilidades generales) --- */
 .margin-left {
   margin-left: 1rem;
 }
@@ -303,7 +280,6 @@ a {
   border-image: linear-gradient(to right, #f1feff, #c7fdff) 10;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
 
 .blue-background {
   background: linear-gradient(to right, #006384, #c7fdff);

@@ -59,13 +59,15 @@ function Pautas() {
                     </p>
                     <div className="text-center card-body blue-border">
                         <h4 className="margin-bottom">Que es lo que debes tener en cuenta antes de desarmar tu computadora</h4>
-                        <iframe width="560" 
-                        height="315" 
+                        <iframe 
+                        width="60%" 
+                        height="315"
                         src="https://www.youtube.com/embed/s7TujnpHOrs?si=JD8qK2p0XZLqehSi" 
                         title="YouTube video player" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                         referrerPolicy="strict-origin-when-cross-origin" 
-                        allowFullScreen></iframe>
+                        allowFullScreen
+                        ></iframe>
                     </div>
                 </div>
             </div>
