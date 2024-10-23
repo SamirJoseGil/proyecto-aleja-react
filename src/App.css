@@ -151,8 +151,8 @@ a {
 
 /* --- Estilos para imágenes --- */
 .custom-img {
-  min-width: 30%;
-  max-width: 40%;
+  min-width: 20%;
+  max-width: 30%;
   margin: 2rem;
 }
 
