@@ -56,6 +56,22 @@ export default function Ensamble() {
                             </div>
                         </li>
                     </ol>
+                    <div className="text-center card-body blue-border">
+                        <h4 className="margin-bottom">Video de Como Hacer un Ensamble</h4>
+                        <iframe
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/Y_jI89ZN6rs?si=aTPid6HyB-w2mA51"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                        ></iframe>
+                        <hr />
+                        <h5 className="margin-top margin-bottom">Tambien te invito a jugar nuestro de preguntas preguntas de el Ahorcado!</h5 >
+                        <p>El cual te hara mejorar tus conocimientos sobre las partes de el computador</p>
+                        <button className="btn-primary"><a href="/Manual/JuegosInteractivos">Ir a juegos Interactivos</a></button>
+                    </div>
                 </div>
             </div>
         </div>

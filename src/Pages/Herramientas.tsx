@@ -92,6 +92,21 @@ function Herramientas() {
                                 </div>
                             </li>
                         </ol>
+                        <div className="text-center card-body blue-border">
+                            <h4 className="margin-bottom">¿Que Herramientas Son Necesarias?</h4>
+                            <iframe 
+                            width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/67yjfMOme3Q?si=8QOcDDe-ornzR-0l" 
+                            title="YouTube video player" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerPolicy="strict-origin-when-cross-origin" 
+                            allowFullScreen
+                            ></iframe>
+                            <hr />
+                            <h5 className="margin-top margin-bottom">Tambien te invito a jugar nuestro juego de memoria de herramientas!</h5 >
+                            <button className="btn-primary"><a href="/Manual/JuegosInteractivos">Ir a juegos Interactivos</a></button>
+                        </div>
                     </div>
                 </div>
             </main>

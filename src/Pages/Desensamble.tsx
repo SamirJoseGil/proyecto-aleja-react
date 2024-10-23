@@ -78,6 +78,22 @@ function Desensamble() {
                             Extraiga con cuidado la <b>Tarjeta Madre</b> del gabinete y colóquela en la alfombrilla antiestática.
                         </li>
                         <img src="/img/ExtraerBoard.png" alt="Extraer Board" className="custom-img img-fluid rounded mx-auto" />
+                        <div className="text-center card-body blue-border">
+                            <h4 className="margin-bottom">Aqui un ejemplo de como deberia hacerse un Desensamble</h4>
+                            <iframe
+                                width="560"
+                                height="315"
+                                src="https://www.youtube.com/embed/sRa5CBr15Qg"
+                                title="YouTube video player"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerPolicy="strict-origin-when-cross-origin"
+                                allowFullScreen
+                            ></iframe>
+                            <hr />
+                            <h5 className="margin-top margin-bottom">Tambien te invito a jugar nuestro de preguntas preguntas de el Ahorcado!</h5 >
+                            <p>El cual te hara mejorar tus conocimientos sobre las partes de el computador</p>
+                            <button className="btn-primary"><a href="/Manual/JuegosInteractivos">Ir a juegos Interactivos</a></button>
+                        </div>
                     </ol>
                 </div>
             </div>

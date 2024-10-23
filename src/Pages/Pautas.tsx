@@ -57,6 +57,16 @@ function Pautas() {
                         comprender y seguir los procedimientos de seguridad. Es también importante a la hora de realizar
                         mantenimiento a la PC, contar con las herramientas adecuadas y así hacer más eficaz el trabajo.
                     </p>
+                    <div className="text-center card-body blue-border">
+                        <h4 className="margin-bottom">Que es lo que debes tener en cuenta antes de desarmar tu computadora</h4>
+                        <iframe width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/s7TujnpHOrs?si=JD8qK2p0XZLqehSi" 
+                        title="YouTube video player" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerPolicy="strict-origin-when-cross-origin" 
+                        allowFullScreen></iframe>
+                    </div>
                 </div>
             </div>
         </div>
