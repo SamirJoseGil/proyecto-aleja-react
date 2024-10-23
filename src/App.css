@@ -91,6 +91,12 @@ a {
   text-decoration: none;
 }
 
+.custom-title-welcome {
+  font-weight: bold;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
 .custom-title {
   font-weight: bold;
   background: linear-gradient(to right, #006384, #c7fdff);
