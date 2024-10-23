@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { Routes, Route, Link, useNavigate } from 'react-router-dom';
-import { Navbar, Nav, Container, Offcanvas } from 'react-bootstrap';
+import { Navbar, Container, Offcanvas, Nav } from 'react-bootstrap';
 
 import Pautas from '../Pages/Pautas';
 import Herramientas from '../Pages/Herramientas';
@@ -28,28 +28,52 @@ export default function PrincipalPage() {
     navigate(routes[newPage]);
   };
 
+
+  const offcanvasRef = useRef<HTMLDivElement>(null);
+
+  const handleClose = () => {
+    if (offcanvasRef.current) {
+      const offcanvasElement = offcanvasRef.current;
+      const bsOffcanvas = (window as any).bootstrap.Offcanvas.getInstance(offcanvasElement);
+      if (bsOffcanvas) {
+        bsOffcanvas.hide();
+      }
+    }
+  };
+
   return (
     <div>
-      <header>
+     <header>
         <Navbar expand="lg" className="bd-body-tertiary custom-bottom-border">
           <Container fluid>
             <Navbar.Brand href="/" className="d-flex align-items-center">
               <h2 className='custom-title margin-left'>TechPage</h2>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls='offcanvasNavbar' />
-            <Navbar.Offcanvas id='offcanvasNavbar' aria-labelledby='navbarScrollingDropdown' placement='end'>
-              <Offcanvas.Header>
+            <Navbar.Offcanvas
+              id='offcanvasNavbar'
+              aria-labelledby='offcanvasNavbarLabel'
+              placement='end'
+              ref={offcanvasRef}
+            >
+              <Offcanvas.Header closeButton>
                 <Offcanvas.Title id='offcanvasNavbarLabel'>Menú de Navegación</Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className='ms-auto'>
-                  <Nav.Link as={Link} to='/Manual'>Inicio</Nav.Link>
-                  <Nav.Link as={Link} to='/Manual/Pautas'>Pautas</Nav.Link>
-                  <Nav.Link as={Link} to='/Manual/Herramientas'>Herramientas</Nav.Link>
-                  <Nav.Link as={Link} to='/Manual/Desensamble'>Desensamble del PC</Nav.Link>
-                  <Nav.Link as={Link} to='/Manual/AntesDelEnsamble'>Antes del Ensamble</Nav.Link>
-                  <Nav.Link as={Link} to='/Manual/Ensamble'>Ensamble del PC</Nav.Link>
-                  <Nav.Link as={Link} to='/Manual/JuegosInteractivos'>Juegos Interactivos</Nav.Link>
+                  <Nav.Link as={Link} to='/Manual' onClick={handleClose}>Inicio</Nav.Link>
+                  <hr />
+                  <Nav.Link as={Link} to='/Manual/Pautas' onClick={handleClose}>Pautas</Nav.Link>
+                  <hr />
+                  <Nav.Link as={Link} to='/Manual/Herramientas' onClick={handleClose}>Herramientas</Nav.Link>
+                  <hr />
+                  <Nav.Link as={Link} to='/Manual/Desensamble' onClick={handleClose}>Desensamble del PC</Nav.Link>
+                  <hr />
+                  <Nav.Link as={Link} to='/Manual/AntesDelEnsamble' onClick={handleClose}>Antes del Ensamble</Nav.Link>
+                  <hr />
+                  <Nav.Link as={Link} to='/Manual/Ensamble' onClick={handleClose}>Ensamble</Nav.Link>
+                  <hr />
+                  <Nav.Link as={Link} to='/Manual/JuegosInteractivos' onClick={handleClose}>Juegos Interactivos</Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
